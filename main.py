@@ -3,8 +3,8 @@ import os
 
 import requests
 
-PIXELA_TOKEN = os.environ.get("PIXELA_TOKEN") # Uniques token that user defines
-PIXELA_UNAME = os.environ.get("PIXELA_UNAME")  # Unique username
+PIXELA_TOKEN = os.environ.get("PIXELA_TOKEN")  # Uniques token that user defines
+PIXELA_UNAME = os.environ.get("PIXELA_UNAME")   # Unique username
 graph_id = "graph5"
 
 headers = {
@@ -56,7 +56,7 @@ print(pixel_response.text)
 
 # Update pixels
 
-date = today # Date to update
+date = today  # Date to update
 
 UPDATE_ENDPOINT = f"https://pixe.la/v1/users/{PIXELA_UNAME}/graphs/{graph_id}/{date}"
 
